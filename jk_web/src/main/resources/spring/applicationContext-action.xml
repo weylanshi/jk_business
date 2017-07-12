@@ -15,8 +15,9 @@
 	http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <!-- Action -->
-    <bean id="loginAction" class="cn.itcast.jk.action.LoginAction" scope="prototype">
-    </bean>
-    <bean id="homeAction" class="cn.itcast.jk.action.HomeAction" scope="prototype">
+    <bean id="loginAction" class="cn.itcast.jk.action.LoginAction" scope="prototype"></bean>
+    <bean id="homeAction" class="cn.itcast.jk.action.HomeAction" scope="prototype"></bean>
+    <bean id="deptAction" class="cn.itcast.jk.action.sysadmin.DeptAction" scope="prototype">
+        <property name="deptService" ref="deptService"></property>
     </bean>
 </beans>

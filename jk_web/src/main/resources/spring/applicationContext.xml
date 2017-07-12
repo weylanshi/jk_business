@@ -19,7 +19,7 @@
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/jk?characterEncoding=utf8" />
 		<property name="user" value="root" />
-		<property name="password" value="huidong_mysql123" />
+		<property name="password" value="root" />
 	</bean>
 	
 	<!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">

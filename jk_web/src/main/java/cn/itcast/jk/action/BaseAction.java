@@ -1,5 +1,6 @@
 package cn.itcast.jk.action;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.log4j.Logger;
 import org.apache.struts2.interceptor.ApplicationAware;
@@ -53,4 +54,10 @@ public class BaseAction extends ActionSupport implements RequestAware, SessionAw
 		this.application = application;
 	}
 
+	/**
+	 * 将对象放入值栈的栈顶
+	 */
+	public void push(Object object){
+		ActionContext.getContext().getValueStack().push(object);
+	}
 }
