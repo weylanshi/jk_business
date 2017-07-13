@@ -33,6 +33,13 @@
 	        <tr>
 	            <td class="columnTitle">上级部门：</td>
 	            <td class="tableContent">
+					<%--name 属性代表下拉框的名称
+					list : 绑定的集合  list<Dept>
+					headerKey : 代表首选项的value属性
+					headerValue : 代表首选项的文本
+					listKey: 指定 option的value属性 <option value="${id}"></option>
+					listValue : option 的文本 --%>
+					<%--<s:debug></s:debug>--%>
 	            	<s:select name="parent.id" list="#deptList" headerKey="" headerValue="--请选择--" listKey="id" listValue="deptName"></s:select>
 	            </td>
 	        </tr>		

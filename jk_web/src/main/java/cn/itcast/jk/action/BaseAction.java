@@ -60,4 +60,12 @@ public class BaseAction extends ActionSupport implements RequestAware, SessionAw
 	public void push(Object object){
 		ActionContext.getContext().getValueStack().push(object);
 	}
+
+	/**
+	 * 将key-value 放入值栈的context中
+	 */
+
+	public void put(String key ,Object value){
+		ActionContext.getContext().put(key,value);
+	}
 }

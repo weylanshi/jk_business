@@ -11,6 +11,10 @@
 	<package name="sysadmin" namespace="/sysadmin" extends="struts-default">
 		<action name="deptAction_*" class="deptAction" method="{1}">
 			<result name="list">/WEB-INF/pages/sysadmin/dept/jDeptList.jsp</result>
+			<result name="toview">/WEB-INF/pages/sysadmin/dept/jDeptView.jsp</result>
+			<result name="tocreate">/WEB-INF/pages/sysadmin/dept/jDeptCreate.jsp</result>
+			<result name="alist" type="redirectAction">deptAction_list</result>
+			<result name="toupdate" >/WEB-INF/pages/sysadmin/dept/jDeptUpdate.jsp</result>
 		</action>
 	</package>
 

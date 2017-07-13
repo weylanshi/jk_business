@@ -53,6 +53,8 @@ public class BaseDaoImpl implements BaseDao{
 		}
 		
 		//查询一次，获取记录总数
+		//TODO 统计优化
+		//select count(*)
 		int count = query.list().size();
 		page.setTotalRecord(count);
 		
