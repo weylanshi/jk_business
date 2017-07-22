@@ -1,5 +1,7 @@
 package cn.itcast.jk.action;
 
+import cn.itcast.jk.utils.SysConstant;
+
 /**
  * @Description:
  * @Author:		传智播客 java学院	传智.宋江
@@ -22,10 +24,11 @@ public class HomeAction extends BaseAction{
 
 	public String title(){
 
-		//获取session
-		//User curUser = (User)session.get(SysConstant.CURRENT_USER_INFO);
+//		获取session
+//		User curUser = (User)session.get(SysConstant.CURRENT_USER_INFO);
 		//ActionContext.getContext().getValueStack().push(curUser);
-		
+
+//		asf
 		return "title";
 	}
 

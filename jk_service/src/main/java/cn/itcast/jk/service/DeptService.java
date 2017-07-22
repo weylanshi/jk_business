@@ -33,4 +33,5 @@ public interface DeptService {
     //批量删除
     void delete(Class<Dept> entityClass, Serializable[] ids);
 
+
 }
