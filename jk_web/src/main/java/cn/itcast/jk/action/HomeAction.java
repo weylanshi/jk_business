@@ -29,6 +29,7 @@ public class HomeAction extends BaseAction{
 		//ActionContext.getContext().getValueStack().push(curUser);
 
 //		asf
+		
 		return "title";
 	}
 
